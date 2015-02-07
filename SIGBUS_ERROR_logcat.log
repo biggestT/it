@@ -1,0 +1,33 @@
+F/libc    ( 8276): Fatal signal 7 (SIGBUS) at 0x00000000 (code=128), thread 8276 (m.thingsbook.it)
+I/DEBUG   (   92): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   92): Build fingerprint: 'google/soju/crespo:4.1.2/JZO54K/485486:user/release-keys'
+I/DEBUG   (   92): Revision: '52'
+I/DEBUG   (   92): pid: 8276, tid: 8276, name: m.thingsbook.it  >>> com.thingsbook.it <<<
+I/DEBUG   (   92): signal 7 (SIGBUS), code 128 (SI_KERNEL), fault addr 00000000
+I/DEBUG   (   92):     r0 00000000  r1 4dbcbb10  r2 4dbae02a  r3 4dbae02a
+I/DEBUG   (   92):     r4 00000000  r5 00000000  r6 4dbae02a  r7 ffff0fc0
+I/DEBUG   (   92):     r8 4dbcbb10  r9 4c963cfc  sl 415bf238  fp be856e80
+I/DEBUG   (   92):     ip 00000000  sp be856e38  lr 53a52eac  pc ffff0fc0  cpsr 68070010
+I/DEBUG   (   92):     d0  aaaaaaaaaaaaaaaa  d1  74702f74692f3074
+I/DEBUG   (   92):     d2  7474612720656c65  d3  2773657475626972
+I/DEBUG   (   92):     d4  74276e73656f6420  d5  203a747369786520
+I/DEBUG   (   92):     d6  657473616d2f7300  d7  4015314840150072
+I/DEBUG   (   92):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   92):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   92):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   92):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   92):     d16 41d4e5d1a2c00000  d17 41d4e5edc2c00000
+I/DEBUG   (   92):     d18 40dc200000000000  d19 3ff0000000000000
+I/DEBUG   (   92):     d20 c031000000000000  d21 c032000000000000
+I/DEBUG   (   92):     d22 0000000000000000  d23 c031000000000000
+I/DEBUG   (   92):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   (   92):     d26 3ff0000000000000  d27 0000000000000000
+I/DEBUG   (   92):     d28 3ff0000000000000  d29 0000000000000000
+I/DEBUG   (   92):     d30 0000000000000000  d31 c032000000000000
+I/DEBUG   (   92):     scr 20000093
+I/DEBUG   (   92): 
+I/DEBUG   (   92): backtrace:
+I/DEBUG   (   92):     #00  pc 00000fc0  [vectors]
+I/DEBUG   (   92):     #01  pc 0021dea8  /data/app-lib/com.thingsbook.it-1/libcom_thingsbook_it_LibGit2.so
+I/DEBUG   (   92):     #02  pc 000dbbe4  /data/app-lib/com.thingsbook.it-1/libcom_thingsbook_it_LibGit2.so
+I/DEBUG   (   92): 

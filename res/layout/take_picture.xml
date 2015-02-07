@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/preview_container"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" >
+  <FrameLayout
+    android:id="@+id/camera_preview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    <com.thingsbook.it.CameraButtonsGroup
+      android:id="@+id/buttons_container"
+      android:layout_width="fill_parent" 
+      android:layout_height="fill_parent" 
+      android:background="@color/dark"
+      android:layout_alignParentBottom="true">
+    <Button
+      android:id="@+id/button_capture"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:background="@drawable/round_button"
+      />
+    </com.thingsbook.it.CameraButtonsGroup>
+</RelativeLayout>
