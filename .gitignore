@@ -17,3 +17,5 @@ jni/lib/
 libs/
 obj/
 libs-source
+standalone-toolchain
+utils
