@@ -1,7 +1,14 @@
+# Makefile to automate the process described over at
+# http://worblehat.github.io/Compiling_libgit2_for_Android/
+
+# -------------------
+
+
 HOST_SYSTEM="linux-x86_64"
 NDK_PATH=/opt/android-ndk
 TOOLCHAIN_CMAKE_FILE=$(CURDIR)/toolchain.cmake
 BUILD_DIR= $(CURDIR)/utils
+LIB_DIR= $(CURDIR)/lib
 
 TOOLCHAIN_DIR= $(BUILD_DIR)/standalone-toolchain
 CMOSS_DIR= $(BUILD_DIR)/cmoss
@@ -36,6 +43,7 @@ $(toolchain):
 toolchain: $(toolchain)
 
 $(cmoss): $(toolchain)
+	rm -rf $(CMOSS_DIR)
 	mkdir -p $(CMOSS_DIR)
 	git clone --depth 1 git@github.com:worblehat/cmoss.git $(CMOSS_DIR)
 
@@ -70,6 +78,8 @@ $(libgit_build): $(libgit_src)
 $(libgit_install): $(libgit_build)
 	cd $(LIBGIT_BUILD_DIR) && \
 	cmake --build . --target install
+	mkdir -p $(LIB_DIR)
+	cp $(libgit_lib) $(LIB_DIR)
 
 clean:
 	rm -rf $(dirs)
